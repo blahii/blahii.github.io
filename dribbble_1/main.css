@@ -1,0 +1,186 @@
+
+
+.hero{
+	width: 100vh;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+
+.text{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	margin: 150px 0 0 300px;
+	top: 50px;
+	left: 50px;
+}
+
+.text {
+	color: black;
+	font-size: 40px;
+	padding: 0;
+}
+
+
+.img{
+	position: absolute;
+	height: 20%;
+	width: auto;
+	z-index: 0;
+}
+
+.img1{
+	top: 2%;
+	left: 6%;
+	animation: circle1 30s linear infinite;
+}
+
+
+.img2{
+	top: 7%;
+	left: 25%;
+	animation: circle2 40s linear infinite;
+}
+
+.img3{
+	top: 32%;
+	left: 15%;
+	animation: circle3 50s linear infinite;
+}
+
+.img4{
+	top: 70%;
+	left: 5%;
+	animation: circle4 30s linear infinite;
+}
+
+.img5{
+	top: 10%;
+	left: 60%;
+	animation: circle5 40s linear infinite;
+}
+
+.img6{
+	top: 55%;
+	left: 73%;
+	height: 30%;
+	animation: circle6 50s linear infinite;
+}
+
+.img7{
+	top: 69%;
+	left: 95%;
+	animation: circle7 55s linear infinite;
+}
+
+@keyframes circle1{
+	from{
+		transform: rotate(0deg)
+		           translate(-30px)
+		           rotate(0deg)
+    }
+    to {
+    	transform: rotate(360deg)
+		           translate(-30px)
+		           rotate(-360deg)
+
+    }
+	
+}
+
+@keyframes circle2{
+	from{
+		transform: rotate(360deg)
+		           translate(-30px)
+		           rotate(-360deg)
+    }
+    to {
+    	transform: rotate(0deg)
+		           translate(-30px)
+		           rotate(0deg)
+
+    }
+	
+}
+
+@keyframes circle3{
+	from{
+		transform: rotate(0deg)
+		           translate(-30px)
+		           rotate(0deg)
+    }
+    to {
+    	transform: rotate(0deg)
+		           translate(-30px)
+		           rotate(0deg)
+
+    }
+	
+}
+
+@keyframes circle4{
+	from{
+		transform: rotate(360deg)
+		           translate(-60px)
+		           rotate(-360deg)
+    }
+    to {
+    	transform: rotate(0deg)
+		           translate(-60px)
+		           rotate(0deg)
+
+    }
+	
+}
+
+@keyframes circle5{
+	from{
+		transform: rotate(360deg)
+		           translate(-80px)
+		           rotate(-360deg)
+    }
+    to {
+    	transform: rotate(0deg)
+		           translate(-80px)
+		           rotate(0deg)
+
+    }
+	
+}
+
+@keyframes circle6{
+	from{
+		transform: rotate(-360deg)
+		           translate(-30px)
+		           rotate(360deg)
+    }
+    to {
+    	transform: rotate(0deg)
+		           translate(-30px)
+		           rotate(0deg)
+
+    }
+	
+}
+
+@keyframes circle7{
+	from{
+		transform: rotate(360deg)
+		           translate(-50px)
+		           rotate(-360deg)
+    }
+    to {
+    	transform: rotate(0deg)
+		           translate(-50px)
+		           rotate(0deg)
+
+    }
+	
+}
+
