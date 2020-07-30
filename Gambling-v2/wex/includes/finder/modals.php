@@ -44,7 +44,7 @@ if (isset($_GET['upload'])) {
   fm_show_nav_path(FM_PATH); // current path
   ?>
   <div class="path">
-    <p><b>Uploading files</b></p>
+    <h4><b>Uploading files</b></p>
     <p class="break-word">Destination folder: <?php echo fm_enc(fm_convert_win(FM_ROOT_PATH . '/' . FM_PATH)) ?></p>
     <form action="" method="post" enctype="multipart/form-data">
       <input type="hidden" name="p" value="<?php echo fm_enc(FM_PATH) ?>">
@@ -55,7 +55,7 @@ if (isset($_GET['upload'])) {
       <input type="file" name="upload[]"><br>
       <input type="file" name="upload[]"><br>
       <br>
-      <p>
+      <h4>
         <button class="btn"><i class="icon-apply"></i> Upload</button> &nbsp;
         <b><a href="?p=<?php echo urlencode(FM_PATH) ?>"><i class="icon-cancel"></i> Cancel</a></b>
       </p>
@@ -78,7 +78,7 @@ if (isset($_POST['copy'])) {
   fm_show_nav_path(FM_PATH); // current path
   ?>
   <div class="path">
-    <p><b>Copying</b></p>
+    <h4><b>Copying</b></p>
     <form action="" method="post">
       <input type="hidden" name="p" value="<?php echo fm_enc(FM_PATH) ?>">
       <input type="hidden" name="finish" value="1">
@@ -93,8 +93,8 @@ if (isset($_POST['copy'])) {
         <label for="inp_copy_to">Destination folder:</label>
         <?php echo FM_ROOT_PATH ?>/<input name="copy_to" id="inp_copy_to" value="<?php echo fm_enc(FM_PATH) ?>">
       </p>
-      <p><label><input type="checkbox" name="move" value="1"> Move</label></p>
-      <p>
+      <h4><label><input type="checkbox" name="move" value="1"> Move</label></p>
+      <h4>
         <button class="btn"><i class="icon-apply"></i> Copy</button> &nbsp;
         <b><a href="?p=<?php echo urlencode(FM_PATH) ?>"><i class="icon-cancel"></i> Cancel</a></b>
       </p>
@@ -118,17 +118,17 @@ if (isset($_GET['copy']) && !isset($_GET['finish'])) {
   fm_show_nav_path(FM_PATH); // current path
   ?>
   <div class="path">
-    <p><b>Copying</b></p>
+    <h4><b>Copying</b></p>
     <p class="break-word">
       Source path: <?php echo fm_enc(fm_convert_win(FM_ROOT_PATH . '/' . $copy)) ?><br>
       Destination folder: <?php echo fm_enc(fm_convert_win(FM_ROOT_PATH . '/' . FM_PATH)) ?>
     </p>
-    <p>
+    <h4>
       <b><a href="?p=<?php echo urlencode(FM_PATH) ?>&amp;copy=<?php echo urlencode($copy) ?>&amp;finish=1"><i class="icon-apply"></i> Copy</a></b> &nbsp;
       <b><a href="?p=<?php echo urlencode(FM_PATH) ?>&amp;copy=<?php echo urlencode($copy) ?>&amp;finish=1&amp;move=1"><i class="icon-apply"></i> Move</a></b> &nbsp;
       <b><a href="?p=<?php echo urlencode(FM_PATH) ?>"><i class="icon-cancel"></i> Cancel</a></b>
     </p>
-    <p><i>Select folder:</i></p>
+    <h4><i>Select folder:</i></p>
     <ul class="folders break-word">
       <?php
       if ($parent !== false) {
@@ -241,7 +241,7 @@ if (isset($_GET['view'])) {
       }
       ?>
     </p>
-    <p>
+    <h4>
       <b><a href="?p=<?php echo urlencode(FM_PATH) ?>&amp;dl=<?php echo urlencode($file) ?>"><i class="icon-download"></i> Download</a></b> &nbsp;
       <b><a href="<?php echo fm_enc($file_url) ?>" target="_blank"><i class="icon-chain"></i> Open</a></b> &nbsp;
       <?php
@@ -271,16 +271,16 @@ if (isset($_GET['view'])) {
         }
         echo '</code>';
       } else {
-        echo '<p>Error while fetching archive info</p>';
+        echo '<h4>Error while fetching archive info</p>';
       }
     } elseif ($is_image) {
       // Image content
       if (in_array($ext, array('gif', 'jpg', 'jpeg', 'png', 'bmp', 'ico'))) {
-        echo '<p><img src="' . fm_enc($file_url) . '" alt="" class="preview-img"></p>';
+        echo '<h4><img src="' . fm_enc($file_url) . '" alt="" class="preview-img"></p>';
       }
     } elseif ($is_audio) {
       // Audio content
-      echo '<p><audio src="' . fm_enc($file_url) . '" controls preload="metadata"></audio></p>';
+      echo '<h4><audio src="' . fm_enc($file_url) . '" controls preload="metadata"></audio></p>';
     } elseif ($is_video) {
       // Video content
       echo '<div class="preview-video"><video src="' . fm_enc($file_url) . '" width="640" height="360" controls preload="metadata"></video></div>';
@@ -334,8 +334,8 @@ if (isset($_GET['chmod']) && !FM_IS_WIN) {
 
   ?>
   <div class="path">
-    <p><b>Change Permissions</b></p>
-    <p>
+    <h4><b>Change Permissions</b></p>
+    <h4>
       Full path: <?php echo fm_enc($file_path) ?><br>
     </p>
     <form action="" method="post">
@@ -369,7 +369,7 @@ if (isset($_GET['chmod']) && !FM_IS_WIN) {
         </tr>
       </table>
 
-      <p>
+      <h4>
         <button class="btn"><i class="icon-apply"></i> Change</button> &nbsp;
         <b><a href="?p=<?php echo urlencode(FM_PATH) ?>"><i class="icon-cancel"></i> Cancel</a></b>
       </p>

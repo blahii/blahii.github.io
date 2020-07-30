@@ -20,7 +20,7 @@ $user->require_login(); ?>
 <section>
   <div class="container">
     <h1 class="ui-title-1"> Logout </h1>
-    <p>WCMS is an advanced cms that makes it easy to build performant, beautiful sites for the landing-page, portfolio and other websites using open web interface.</p>
+    <h4>WCMS is an advanced cms that makes it easy to build performant, beautiful sites for the landing-page, portfolio and other websites using open web interface.</p>
   </div>
 </section>
 
