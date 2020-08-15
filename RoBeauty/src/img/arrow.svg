@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="61px" viewBox="0 0 60 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1194.000000, -149.000000)" stroke="#000000">
+            <g id="Group-4" transform="translate(1194.000000, 149.000000)">
+                <g id="arrow" transform="translate(0.000000, 0.682509)">
+                    <rect id="Rectangle" x="0.5" y="0.5" width="59" height="59"></rect>
+                    <polyline id="Path-7" stroke-width="2" points="33.9130435 23 26 29.5 33.9130435 36"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
